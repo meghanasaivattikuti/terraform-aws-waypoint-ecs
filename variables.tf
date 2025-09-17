@@ -94,6 +94,7 @@ variable "private_subnets" {
     private_subnets output.
   EOF
   type        = list(string)
+  default     = []
 }
 
 variable "public_subnets" {
@@ -103,6 +104,7 @@ variable "public_subnets" {
     public_subnets output.
   EOF
   type        = list(string)
+  nullable    = false
 }
 
 
